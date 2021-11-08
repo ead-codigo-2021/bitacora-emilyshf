@@ -1,0 +1,89 @@
+/* Resets de estilos */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Variables */
+
+h1 {
+    padding: 2rem;
+    color: black;
+}
+/* Elemento raiz */
+:root {
+    --font-family-base: 'Montserrat', sans-serif;
+    --color-bg: rgba(0,0,0,.1);
+    --color-dark: #333;
+    --color-white: #fff;
+    --max-width-container: 1000px;
+}
+
+html {
+    font-size: 16px;
+}
+@media screen and ( max-width: 400px ) {
+    html {
+        font-size: 13px;
+    }
+}
+/* Body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    font-size: 1rem;
+    line-height: 1.5;
+
+}
+/* estilos tipograficos base */
+h1,
+h2,
+h3,
+h4,
+    font-weight: 300;
+
+}
+/* Container */
+.container {
+    padding: 2rem;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Cabecera */
+.site-header  { 
+    font-size: 18px;
+    background-color: rgba(6,71,137,.10);
+}
+.site-navegation {
+    display: flex;
+    justify-content: space-evenly;
+}
+.site-navegation a {
+display: flex;
+flex-basis: 100%;
+justify-content: center;
+align-content: center;
+padding: .75rem 2rem;
+font-size: .85rem;
+line-height: 1.2;
+text-align: center;
+text-decoration: none;
+color: var(--color-white);
+background-color:var(--color-dark);
+border: 1px solid currentColor;
+}
+.site-navegation a:nth-child(1) {
+    flex-grow: 2;
+}
+.site-navegation a:hover {
+
+    background-color: var(--color-dark);
+
+}
+/* pie de pagina */
+.site-footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 2rem;
+    background-color:var(--color-bg);
+}
