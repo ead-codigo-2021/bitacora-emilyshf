@@ -7,18 +7,19 @@
 
 h1 {
     padding: 2rem;
-    color: black;
+    color: var(--color-dark);
 }
 /* Elemento raiz */
 :root {
     --font-family-base: 'Montserrat', sans-serif;
-    --color-bg: rgba(0,0,0,.1);
-    --color-dark: #333;
+    --color-bg: #a1d9f771;
+    --color-dark: #00003D;
     --color-white: #fff;
     --max-width-container: 1000px;
 }
 
 html {
+    height: 100%;
     font-size: 16px;
 }
 @media screen and ( max-width: 400px ) {
@@ -29,10 +30,13 @@ html {
 /* Body */
 body {
     font-family: 'Montserrat', sans-serif;
+    color: var(--color-dark);
     background: white;
     font-size: 1rem;
     line-height: 1.5;
-
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
 }
 /* estilos tipograficos base */
 h1,
@@ -51,8 +55,9 @@ h4,
 }
 /* Cabecera */
 .site-header  { 
+    color: var(--color-dark);
     font-size: 18px;
-    background-color: rgba(6,71,137,.10);
+    background-color: var(--color-bg);
 }
 .site-navegation {
     display: flex;
@@ -64,26 +69,56 @@ flex-basis: 100%;
 justify-content: center;
 align-content: center;
 padding: .75rem 2rem;
-font-size: .85rem;
+font-size: .90rem;
 line-height: 1.2;
 text-align: center;
 text-decoration: none;
 color: var(--color-white);
-background-color:var(--color-dark);
+background-color: var(--color-dark);
 border: 1px solid currentColor;
+cursor: pointer;
 }
 .site-navegation a:nth-child(1) {
     flex-grow: 2;
 }
 .site-navegation a:hover {
 
-    background-color: var(--color-dark);
+    background-color:#00003dde;
 
 }
 /* pie de pagina */
 .site-footer {
+
     text-align: center;
     margin-top: auto;
     padding: 2rem;
     background-color:var(--color-bg);
+    color: var(--color-dark);
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
+/* Style accordion panel */
+.accordion {
+    background-color:var(--color-bg);
+    color:var(--color-dark);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Hover accordion*/
+  .active, .accordion:hover {
+    background-color: #95d1f1;
+  }
+  
+  /* Accordion panel */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
