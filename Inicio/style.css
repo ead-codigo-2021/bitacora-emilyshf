@@ -9,6 +9,17 @@ h1 {
     padding: 2rem;
     color: var(--color-dark);
 }
+h2 {
+    color: var(--color-dark);
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+}
+h3 {
+    color: var(--color-dark);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
 /* Elemento raiz */
 :root {
     --font-family-base: 'Montserrat', sans-serif;
@@ -53,6 +64,12 @@ h4,
     margin-left: auto;
     margin-right: auto;
 }
+.site-main {
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+}
 /* Cabecera */
 .site-header  { 
     color: var(--color-dark);
@@ -82,20 +99,17 @@ cursor: pointer;
     flex-grow: 2;
 }
 .site-navegation a:hover {
-
     background-color:#00003dde;
-
 }
-/* pie de pagina */
-.site-footer {
-
-    text-align: center;
-    margin-top: auto;
-    padding: 2rem;
-    background-color:var(--color-bg);
-    color: var(--color-dark);
-    grid-row-start: 2;
-    grid-row-end: 3;
+/*Articulo*/
+.home-post {
+    padding-left: 4rem;
+    text-align: left;
+    line-height: 2;
+}
+/*Punteo*/
+.description {
+    line-height: 2;
 }
 /* Style accordion panel */
 .accordion {
@@ -122,3 +136,14 @@ cursor: pointer;
     display: none;
     overflow: hidden;
   }
+  /* pie de pagina */
+.site-footer {
+
+    text-align: center;
+    margin-top: auto;
+    padding: 2rem;
+    background-color:var(--color-bg);
+    color: var(--color-dark);
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
