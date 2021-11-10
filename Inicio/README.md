@@ -7,7 +7,7 @@
 * Sobre mi
     * Emily Hutt Fontt
 * Sobre las clases
-    * Clases []
+    * Clases
         * Título
         * Fecha
         * Descripción
